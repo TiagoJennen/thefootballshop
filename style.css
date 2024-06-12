@@ -27,14 +27,21 @@ body {
 
 .brand-container {
     position: absolute;
-    width: 460px; 
-    height: 300px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    width: 460px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: none;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s; 
+    
+}
+
+.brand-container:hover {
+    background-color: rgb(167, 167, 167); 
 }
 
 .brand-logo {
@@ -62,7 +69,6 @@ body {
 }
 
 #nike-container {
-    background-color: #ffffff2a;
     left: 20%;
     top: 65%;
     transform: translate(-50%, -50%);
@@ -70,7 +76,6 @@ body {
 }
 
 #adidas-container {
-    background-color: #ffffff2a;
     left: 50%;
     top: 65%;
     transform: translate(-50%, -50%);
@@ -78,93 +83,8 @@ body {
 }
 
 #puma-container {
-    background-color: #ffffff2a;
     left: 80%;
     top: 65%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-.container {
-    height: 100vh;
-    overflow-y: scroll; 
-    scroll-snap-type: y mandatory; 
-}
-
-.container::-webkit-scrollbar {
-    display: none; 
-}
-
-.section {
-    height: 100vh;
-    scroll-snap-align: start; 
-    background-position: center; 
-    background-size: contain; 
-}
-
-.nike1 {
-    background-image: url(Images/adidasmessi.webp);
-    background-size: cover;
-}
-
-.nike2 {
-    background-image: url(Images/adidascopa.jpg);
-    background-size: cover;
-}
-
-.nike3 {
-    background-image: url(Images/adidaspredator.webp);
-    background-size: cover;
-}
-
-.nike4 {
-    background-image: url(Images/adidasx.avif);
-    background-size: cover;
-}
-
-.adidas1 {
-    background-image: url(Images/adidasmessi.webp);
-    background-size: cover;
-    position: relative;
-}
-
-.adidas2 {
-    background-image: url(Images/adidascopa.jpg);
-    background-size: cover;
-    position: relative;
-}
-
-.adidas3 {
-    background-image: url(Images/adidaspredator.webp);
-    background-size: cover;
-    position: relative;
-}
-
-.adidas4 {
-    background-image: url(Images/adidasx.avif);
-    background-size: cover;
-    position: relative;
-}
-
-.puma1 {
-    background-image: url(Images/adidasmessi.webp);
-    background-size: cover;
-}
-
-.puma2 {
-    background-image: url(Images/adidascopa.jpg);
-    background-size: cover;
-}
-
-.puma3 {
-    background-image: url(Images/adidaspredator.webp);
-    background-size: cover;
-}
-
-.puma4 {
-    background-image: url(Images/adidasx.avif);
-    background-size: cover;
-}
-
-
-
-
