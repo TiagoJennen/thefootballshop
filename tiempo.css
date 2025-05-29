@@ -1,0 +1,113 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3eee4;
+    color: #333;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: rgb(69, 69, 69);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-section, .info-section, .cart-section {
+    margin-bottom: 3rem;
+}
+
+.product-section h2, .info-section h2, .cart-section h2, .nike-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #b7b7b7;
+    padding-bottom: 0.5rem;
+}
+
+.nike-section {
+    text-align: center;
+}
+
+.nike-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.nike-item {
+    
+    background: rgba(226, 253, 250, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    flex: 1 1 calc(25% - 1rem);
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.nike-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.nike-item button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.nike-item button img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.hover {
+    background-color: rgba(216, 253, 248, 0.75);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hover:hover {
+    background-color: rgba(216, 253, 248, 0.5) ;
+}
